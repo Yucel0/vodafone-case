@@ -1,0 +1,43 @@
+ul {
+    list-style: none;
+
+    @media screen and (max-width:576px) {
+        padding: 0 20px;
+    }
+    
+    .todo-item {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        display: flex;
+        padding: 10px 15px;
+        justify-content: space-between;
+    
+        &:not(:last-child) {
+            border-bottom: 0;
+        }
+    
+        .todo-name {
+            width: 450px;
+            user-select: none;
+    
+            &.completed {
+                text-decoration: line-through;
+            }
+    
+            @media screen and (max-width:576px) {
+                width: 250px;
+            }
+        }
+    
+        .delete-icon {
+            cursor: pointer;
+    
+            svg {
+                width: 18px;
+                fill: #FF6467;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+

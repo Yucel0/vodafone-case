@@ -1,0 +1,33 @@
+.add-todo-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin: 15px 0 20px 0;
+
+    input {
+        width: 400px;
+        outline: none;
+        padding: 3px 9px;
+        border: 2px solid #ccc;
+        border-radius: 3px;
+
+        &::placeholder {
+            color: #ccc;
+        }
+
+        @media screen and (max-width:576px) {
+            width: 200px;
+        }
+    }
+
+    button {
+        border: none;
+        background: #337AB7;
+        color: #fff;
+        border-radius: 3px;
+        padding: 5px 8px;
+        font-size: 12px;
+        font-weight: 200;
+        cursor: pointer;
+    }
+}
